@@ -7,7 +7,7 @@ import { Injectable } from '@angular/core';
 })
 export class LocalService {
  // private localDataSubject = new Subject<Local>();
-  public pageIndix = 1;
+  public pageIndix = 0;
   getLocalData() {
     return this.pageIndix;
   }

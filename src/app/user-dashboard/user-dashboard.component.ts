@@ -95,7 +95,7 @@ export class UserDashboardComponent {
 
   public getUsersList(): void {
     this.isLoading = true;
-    this.service.getUsersPages(this.pageIndex).subscribe(
+    this.service.getUsersPages(this.pageIndex + 1).subscribe(
       (res: any) => {
         if (res && res.data) {
           this.userListDataSource.data = res.data;
