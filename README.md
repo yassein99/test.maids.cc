@@ -6,12 +6,7 @@ This project is a dynamic user dashboard built using **Angular 18.2.12**.
 It showcases advanced Angular features like state management, directives, observables, caching, and animations while maintaining a structured and maintainable codebase.
 
 ---
-Install dependencies:
 
-bash
-Copy
-Edit
-npm install
 
 
 ## 🚀 Features
@@ -44,13 +39,18 @@ Install dependencies:
 `npm install`
 
 
+
 Run the project:
+
 `ng serve`
 
 Open in browser:
+
 `http://localhost:4200`
 
+
 🌐 API Endpoints
+
 Fetch Users: `https://reqres.in/api/users?page={page}`
 Fetch User Details: `https://reqres.in/api/users/{id}`
 
@@ -58,28 +58,48 @@ Fetch User Details: `https://reqres.in/api/users/{id}`
 📂 Folder Structure
 angular-Building_dynamic_user_dashboard/
 │── src/
+
 │   ├── app/
+
 │   │   ├── card/
+
 │   │   ├── header/
+
 │   │   ├── user-dashboard/
+
 │   │   ├── user-details/
+
 │   ├── assets/
+
 │   ├── directives/
+
 │   ├── environments/
+
 │   ├── modules/
+
 │   ├── services/
+
 │── angular.json
+
 │── package.json
+
 │── README.md
 
 
 
 
+---
 
 🤝 Contribution
+
 Feel free to fork and submit pull requests. Ensure to follow best practices and maintain clean code.
 
+---
+
 📄 License
+
 This project is licensed under the MIT License.
+
+---
 
 Made with ❤️ using Angular 🚀
