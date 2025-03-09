@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="card">
+      <img [src]="user?.avatar || 'assets/images/user-avatar.jpg'" class="avatar">      
+      <div class="name">{{ user?.first_name }} {{ user?.last_name }}</div>
+      <div class="email">{{ user?.email }}</div>
+      @if (isLoading) {
+        <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+      }
+    </div>
+    <button class="btn" (click)="goBack()">Back</button>
+  </div>

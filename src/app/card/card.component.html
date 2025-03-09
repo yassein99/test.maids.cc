@@ -1,0 +1,20 @@
+<div class="card {{ fullCard }} {{ cardLoad }}" [@cardClose]="cardClose" [class]="cardClass">
+ 
+    <div class="card-header ripple" [class.hidden]="!title">
+      <h5>{{ title }}</h5>
+      <span [class.hidden]="!classHeader">{{ headerContent }}</span>
+      <span [class.hidden]="classHeader">
+        <ng-content select=".code-header"></ng-content>
+      </span>
+    </div>
+
+ 
+
+  <div [@cardToggle]="cardToggle" class="card-block-hid" style="overflow: unset;">
+    <div class="card-block" [class]="blockClass">
+      <ng-content></ng-content>
+    </div>
+  </div>
+
+  <div class="card-loader" [class.hidden]="loadCard"><i class="fa fa-spinner rotate-refresh"></i></div>
+</div>

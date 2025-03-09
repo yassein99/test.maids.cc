@@ -1,0 +1,309 @@
+@import '../../assets/scss/color/color.scss';
+
+
+.image {
+  margin: 0 auto;
+  width: 54px;
+  height: 56px;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+
+
+
+
+.fa-toggle-on, .fa-toggle-off {
+  color: #448aff;
+  font-size: 35px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.border {
+  border: 1px solid grey;
+  background: #2196f321;
+  padding: 35px;
+
+  .fa {
+    font-size: 100px;
+    color: grey;
+  }
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.ch-label {
+  position: absolute;
+  top: 0;
+  left: 20px !important;
+}
+
+.profile-img {
+  height: auto;
+}
+
+.profile-h {
+  height: auto;
+  width: 100px;
+}
+
+.dis-i {
+  pointer-events: none;
+  cursor: no-drop;
+}
+
+
+
+
+
+
+.page-body {
+    background: linear-gradient(135deg, #f3f4f6, #ffffff);
+    padding: 20px;
+    min-height: 80vh;
+  }
+  
+  .dt-responsive {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    overflow: hidden;
+  }
+  
+  .dt-responsive {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  mat-progress-bar {
+    width: 100%;
+    height: 5px;
+    animation: progressBarAnimation 2s infinite linear;
+  }
+  
+  app-card {
+    display: block;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  app-card:hover {
+    transform: scale(1.02);
+  }
+  
+  mat-table {
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  mat-row {
+    transition: background 0.3s ease;
+  }
+  
+  mat-row:hover {
+    background: rgba(0, 123, 255, 0.1);
+    cursor: pointer;
+  }
+  
+  mat-header-cell {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px;
+    background: #4878BC;
+    color: white;
+  }
+  
+  mat-header-cell:first-child {
+    border-top-left-radius: 8px;
+  }
+  
+  mat-header-cell:last-child {
+    border-top-right-radius: 8px;
+  }
+  
+  
+  
+  .single-icon-click {
+    color: #4878BC;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .single-icon-click:hover {
+    color: #0056b3;
+  }
+  
+  mat-paginator {
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  @keyframes progressBarAnimation {
+    0% {
+      background-color: #007bff;
+    }
+    50% {
+      background-color: #2571c3;
+    }
+    100% {
+      background-color: #4878BC;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+  mat-header-cell.avatar-column, mat-cell.avatar-column {
+    width: 16.66%; 
+  }
+  
+  mat-header-cell.name-column, mat-cell.name-column {
+    width: 25%; 
+  }
+  
+  mat-header-cell.email-column, mat-cell.email-column {
+    width: 50%; 
+  }
+  
+
+  h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  
+  mat-header-cell {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #4878BC; 
+    padding: 12px;
+    text-align: center;
+  }
+  
+  mat-cell {
+    font-size: 0.95rem;
+    color: #444;
+    padding: 10px;
+    text-align: left;
+  }
+  
+
+  mat-header-cell.avatar-column {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #4878BC; 
+    padding: 12px;
+    text-align: center;
+  }
+  mat-header-cell.name-column {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #4878BC; 
+    padding: 12px;
+    text-align: center;
+  }
+  mat-header-cell.email-column {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #4878BC; 
+    padding: 12px;
+    text-align: center;
+  }
+
+
+  mat-cell.avatar-column {
+    text-align: center;
+  }
+  
+  mat-cell.name-column {
+    text-align: center;
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  
+  mat-cell.email-column {
+    text-align: left;
+    font-style: italic;
+    color: #555;
+  }
+  
+  .img-p {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .img-p:hover {
+    transform: scale(1.1);
+  }
+  
+
+  mat-row {
+    transition: background-color 0.3s;
+  }
+  
+  mat-row:hover {
+    background-color: #f1f1f1;
+  }
+
+
+  .no-users-message {
+    text-align: center;
+    font-size: 24px;
+    color: #4878BC;
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 8px;
+    border-color: #4878BC;
+    mask-border-width: 22px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp2 1s ease-out; 
+    font-weight: bold;
+    margin: 20px auto;
+    max-width: 80%;
+    word-wrap: break-word;
+  }
+  
+  @keyframes fadeInUp2 {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+

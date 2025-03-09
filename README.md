@@ -1,27 +1,97 @@
-# AngularBuildingDynamicUserDashboard
+#angular Building dynamic user dashboard
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+##📌 Project Overview
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+This project is a dynamic user dashboard built using Angular 18.2.12. 
+It showcases advanced Angular features like state management, directives, observables, caching, and animations while maintaining a structured and maintainable codebase.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+##🚀 Features
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+🏗 Modular Structure: Built using Angular CLI for scalability.
 
-## Running end-to-end tests
+🔍 User Search: Instantly search users by ID.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+📄 Paginated User List: Fetch and display users from an API.
 
-## Further help
+🔗 User Details Page: Click on a user card to navigate to a detailed profile.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+📦 Caching: Prevents redundant API calls to optimize performance.
+
+🎨 Material Design: Uses Angular Material for an enhanced UI experience.
+
+🏎 State Management: Implements NgRx/Redux for efficient state handling.
+
+✨ Animations & Directives: Custom directives for UI enhancements.
+
+⏳ Loading Indicator: Displays a loading bar during API calls.
+
+
+
+
+
+
+##🎥 Demo
+
+🔗 Live Demo `(Update with the actual link when deployed)`
+
+
+
+
+
+##🛠 Installation
+
+Clone the repository:
+
+git clone:
+    `https://github.com/your-repo/angular-dashboard.git`
+    `cd angular-Building_dynamic_user_dashboard`
+
+
+
+Install dependencies:
+    `npm install`
+
+Run the project:
+    `ng serve`
+
+Open in browser:
+    `http://localhost:4200`
+
+🌐 API Endpoints
+
+Fetch Users: `https://reqres.in/api/users?page={page}`
+
+Fetch User Details: `https://reqres.in/api/users/{id}`
+
+📂 Folder Structure
+
+angular-Building_dynamic_user_dashboard/
+│── src/
+│   ├── app/
+│   │   ├── card/
+│   │   ├── header/
+│   │   ├── user-dashboard/
+│   │   ├── user-details/
+│   ├── assets/
+│   ├── directives/
+│   ├── environments/
+│   ├── modules/
+│   ├── services/
+│── angular.json
+│── package.json
+│── README.md
+
+🤝 Contribution
+
+Feel free to fork and submit pull requests. Ensure to follow best practices and maintain clean code.
+
+📄 License
+
+This project is licensed under the MIT License.
+
+Made with ❤️ using Angular 🚀

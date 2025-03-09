@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { LocalService } from '../services/local.service';  
 
 @Component({
   selector: 'app-root',

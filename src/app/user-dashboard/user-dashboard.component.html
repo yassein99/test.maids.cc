@@ -1,0 +1,87 @@
+<div id="header-page" class="ng-star-inserted header-page">
+    <div class="page-header ng-star-inserted">
+      <div class="page-block ng-star-inserted">
+        <div class="row align-items-center">
+          <div class="col-12">
+            <div class="page-header-title">
+              <span class="ng-star-inserted">
+                <app-header (userIdEntered)="getAllUsersAndSearch($event)" (searchCleared)="onSearchCleared()"></app-header>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ng-container>
+    <div class="page-body no-title">
+      <div class="row">
+        <div class="col-12">
+          <div class="row top-tools">
+            <div class="col-xs-12 col-sm-12 col-sm-12 col-md-6 left-tools">
+            </div>
+            <mat-progress-bar *ngIf="isLoading" mode="indeterminate"></mat-progress-bar>
+            <app-card>
+              @if (userListDataSource)
+              {
+                <div class="dt-responsive">
+                  <div class="table-responsive">
+                    <div *ngIf="noUsersMessage" class="no-users-message">
+                      No user has this ID
+                    </div>
+                    <mat-card-content *ngIf="!noUsersMessage">
+                      <mat-table [dataSource]="userListDataSource" matSort appTooltip [tooltipText]="'Press to view details'">
+                        <ng-container matColumnDef="avatar">
+                          <mat-header-cell *matHeaderCellDef class="avatar-column"></mat-header-cell>
+                          <mat-cell *matCellDef="let e" class="avatar-column">
+                            <img class="img-p" [src]="e?.avatar|| 'assets/images/user-avatar.jpg'" />
+
+                          </mat-cell>
+                        </ng-container>
+                        <!--<ng-container matColumnDef="id">
+                          <mat-header-cell *matHeaderCellDef mat-sort-header>User ID</mat-header-cell>
+                          <mat-cell *matCellDef="let row">
+                            {{ row.id }}
+                          </mat-cell>
+                        </ng-container>-->
+                        <ng-container matColumnDef="email">
+                          <mat-header-cell *matHeaderCellDef mat-sort-header="email" class="email-column">Email </mat-header-cell>
+                          <mat-cell *matCellDef="let row" class="email-column">
+                            {{ row.email }}
+                          </mat-cell>
+                        </ng-container>
+                        <ng-container matColumnDef="name">
+                          <mat-header-cell *matHeaderCellDef mat-sort-header="first_name" class="name-column">Name</mat-header-cell>
+                          <mat-cell *matCellDef="let row" class="name-column" style="text-align: center;">
+                            {{ row.first_name }} {{row.last_name}}
+                          </mat-cell>
+                        </ng-container>
+                        <mat-header-row *matHeaderRowDef="userListColumns"></mat-header-row>
+                        <mat-row
+                          (click)="detailUser(row.id)"
+                          *matRowDef="let row; columns: userListColumns"
+                          class="cursor-pointer"
+                        >
+                        </mat-row>
+                      </mat-table>
+      
+                      <mat-paginator
+                        [pageSize]="pageSize"
+                        [pageIndex]="pageIndex"
+                        [length]="totalUsers"
+                        (page)="handlePageEvent($event)"
+                        [disabled]="isLoading"
+                      ></mat-paginator>
+                    </mat-card-content>
+                  </div>
+                  <!--<div [@if]="!isLoading && err" class="error-msg">{{ err }}</div>-->
+                </div>
+              }
+              
+            </app-card>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
