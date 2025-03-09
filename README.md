@@ -32,31 +32,37 @@ It showcases advanced Angular features like state management, directives, observ
 ## 🛠 Installation
 
 **Clone the repository:**
-git clone https://github.com/your-repo/angular-dashboard.git
-cd angular-Building_dynamic_user_dashboard
-Install dependencies:
+
+`git clone https://github.com/your-repo/angular-dashboard.git`
+
+`cd angular-Building_dynamic_user_dashboard`
+
+
+**Install dependencies:**
 
 `npm install`
 
 
 
-Run the project:
+**Run the project:**
 
 `ng serve`
 
-Open in browser:
+**Open in browser:**
 
 `http://localhost:4200`
 
 
-🌐 API Endpoints
+**🌐 API Endpoints**
 
 Fetch Users: `https://reqres.in/api/users?page={page}`
 Fetch User Details: `https://reqres.in/api/users/{id}`
 
 
-📂 Folder Structure
+**📂 Folder Structure**
+
 angular-Building_dynamic_user_dashboard/
+
 │── src/
 
 │   ├── app/
