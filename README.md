@@ -33,7 +33,7 @@ It showcases advanced Angular features like state management, directives, observ
 
 **Clone the repository:**
 
-`git clone https://github.com/your-repo/angular-dashboard.git`
+`git clone https://github.com/test.maids.cc/angular-Building_dynamic_user_dashboard.git`
 
 `cd angular-Building_dynamic_user_dashboard`
 
