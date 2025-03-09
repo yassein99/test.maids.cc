@@ -25,7 +25,9 @@ It showcases advanced Angular features like state management, directives, observ
 
 ## 🎥 Demo
 
-🔗 **Live Demo:** _(Update with the actual link when deployed)_
+🔗 **Live Demo:** 
+
+`Update with the actual link when deployed`
 
 ---
 
@@ -33,9 +35,9 @@ It showcases advanced Angular features like state management, directives, observ
 
 **Clone the repository:**
 
-`git clone https://github.com/test.maids.cc/angular-Building_dynamic_user_dashboard.git`
+`git clone https://github.com/yassein99/test.maids.cc.git`
 
-`cd angular-Building_dynamic_user_dashboard`
+`cd test.maids.cc`
 
 
 **Install dependencies:**
