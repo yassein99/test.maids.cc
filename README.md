@@ -62,9 +62,8 @@ Fetch User Details: `https://reqres.in/api/users/{id}`
 **📂 Folder Structure**
 
 angular-Building_dynamic_user_dashboard/
-
+```
 │── src/
-
 │   ├── app/
 │   │   ├── card/
 │   │   ├── header/
@@ -78,7 +77,7 @@ angular-Building_dynamic_user_dashboard/
 │── angular.json
 │── package.json
 │── README.md
-
+```
 
 
 
