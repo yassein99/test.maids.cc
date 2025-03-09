@@ -27,7 +27,7 @@ It showcases advanced Angular features like state management, directives, observ
 
 🔗 **Live Demo:** 
 
-[https://yassein99.github.io/test.maids.cc/](https://github.com/yassein99/test.maids.cc)
+[https://yassein99.github.io/test.maids.cc/](https://yassein99.github.io/test.maids.cc/)
 
 ---
 
