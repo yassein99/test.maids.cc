@@ -66,29 +66,17 @@ angular-Building_dynamic_user_dashboard/
 │── src/
 
 │   ├── app/
-
 │   │   ├── card/
-
 │   │   ├── header/
-
 │   │   ├── user-dashboard/
-
 │   │   ├── user-details/
-
 │   ├── assets/
-
 │   ├── directives/
-
 │   ├── environments/
-
 │   ├── modules/
-
 │   ├── services/
-
 │── angular.json
-
 │── package.json
-
 │── README.md
 
 
