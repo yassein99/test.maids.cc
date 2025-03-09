@@ -27,7 +27,7 @@ It showcases advanced Angular features like state management, directives, observ
 
 🔗 **Live Demo:** 
 
-`https://yassein99.github.io/test.maids.cc/`
+`[https://yassein99.github.io/test.maids.cc/](https://github.com/yassein99/test.maids.cc)`
 
 ---
 
@@ -58,7 +58,14 @@ It showcases advanced Angular features like state management, directives, observ
 **🌐 API Endpoints**
 
 Fetch Users: `https://reqres.in/api/users?page={page}`
+
 Fetch User Details: `https://reqres.in/api/users/{id}`
+
+
+
+
+---
+
 
 
 **📂 Folder Structure**
@@ -85,16 +92,25 @@ angular-Building_dynamic_user_dashboard/
 
 ---
 
+
 🤝 Contribution
 
 Feel free to fork and submit pull requests. Ensure to follow best practices and maintain clean code.
 
+
 ---
+
 
 📄 License
 
 This project is licensed under the MIT License.
 
+
 ---
 
+
 Made with ❤️ using Angular 🚀
+
+---
+
+Yassein Yassein
